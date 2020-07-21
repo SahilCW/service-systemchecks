@@ -46,7 +46,10 @@ public class NotificationConfig extends Auditor implements Serializable {
 	@Column(name = "country_code")
 	private String countryCode;
 	
-
+	public NotificationConfig() {
+		super();
+	}
+	
 	public NotificationConfig(Long id) {
 		super();
 		this.id = id;
